@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesse Hildebrand | Enterprise Architect and Agile Coach</title>
+  <meta name="description" content="CV of Jesse Hildebrand: SAFe Practice Consultant, Red Hat Certified System Administrator and enterprise architect with 20 years in federal and defense IT. Active Top Secret clearance.">
+  <link rel="canonical" href="https://jessehildebrand.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jesse Hildebrand | Enterprise Architect and Agile Coach">
+  <meta property="og:description" content="20 years across infrastructure, enterprise architecture and SAFe coaching.">
+  <meta property="og:url" content="https://jessehildebrand.com/">
+  <meta name="theme-color" content="#1f4d3f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4d3f'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23f6f8f5' text-anchor='middle'%3EJH%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jesse Hildebrand",
+    "jobTitle": "Enterprise Architect and Agile Coach",
+    "url": "https://jessehildebrand.com/",
+    "worksFor": { "@type": "Organization", "name": "Fusion Technology LLC" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Mount Vernon Nazarene University" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Bridgeport", "addressRegion": "WV", "addressCountry": "US" }
+  }
+  </script>
+
+  <style>
+    :root {
+      --paper: #f6f8f5;
+      --ink: #1b2420;
+      --ink-soft: #4a5751;
+      --spruce: #1f4d3f;
+      --spruce-1: #2f6b58;
+      --spruce-2: #5f9480;
+      --spruce-3: #9cc0b0;
+      --mist: #dde6e0;
+      --rule: #c9d5ce;
+      --focus: #b07d12;
+
+      --serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+      --sans: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+      --measure: 68ch;
+      --gutter: 9.5rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #121a17;
+        --ink: #e4ebe7;
+        --ink-soft: #a7b6ae;
+        --spruce: #8fc3ac;
+        --spruce-1: #6aa58c;
+        --spruce-2: #4a826b;
+        --spruce-3: #30594a;
+        --mist: #1c2723;
+        --rule: #2c3a34;
+        --focus: #e2b04a;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      font-feature-settings: "tnum" 0;
+    }
+
+    a { color: var(--spruce); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+
+    .skip {
+      position: absolute; left: 1rem; top: -3rem;
+      background: var(--spruce); color: var(--paper);
+      padding: 0.5rem 0.9rem; border-radius: 4px; z-index: 10;
+    }
+    .skip:focus { top: 1rem; }
+
+    .wrap {
+      max-width: calc(var(--gutter) + var(--measure) + 4rem);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- Masthead ---------- */
+    .masthead { padding-top: clamp(3rem, 9vw, 6.5rem); padding-bottom: 2.5rem; }
+
+    .masthead h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.75rem, 8vw, 5.25rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin: 0 0 1.1rem;
+      color: var(--ink);
+    }
+
+    .role {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+      line-height: 1.35;
+      color: var(--ink-soft);
+      margin: 0 0 1.75rem;
+      max-width: 34ch;
+    }
+
+    .meta {
+      display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem;
+      margin: 0; padding: 0; list-style: none;
+      font-size: 0.95rem; color: var(--ink-soft);
+    }
+    .meta strong { color: var(--ink); font-weight: 500; }
+
+    .actions { margin-top: 1.75rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn {
+      font: 500 0.95rem/1 var(--sans);
+      color: var(--paper); background: var(--spruce);
+      border: 1px solid var(--spruce); border-radius: 4px;
+      padding: 0.7rem 1.05rem; cursor: pointer; text-decoration: none;
+    }
+    .btn:hover { background: var(--spruce-1); border-color: var(--spruce-1); }
+    .btn.ghost { background: transparent; color: var(--spruce); }
+    .btn.ghost:hover { background: var(--mist); }
+
+    /* ---------- Career timeline (the signature element) ---------- */
+    .career { margin: 1rem 0 3.5rem; }
+
+    .career h2 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+    .phases, .track { display: flex; width: 100%; }
+
+    .phase {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ink);
+      padding: 0 0.5rem 0.55rem 0;
+      border-left: 1px solid var(--rule);
+      padding-left: 0.6rem;
+    }
+    .phase:first-child { border-left: 0; padding-left: 0; }
+    .phase span { display: block; font-family: var(--sans); font-size: 0.8rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+    .track { height: 3.25rem; gap: 3px; }
+    .seg {
+      display: block; height: 100%;
+      background: var(--c);
+      border-radius: 2px;
+      transform-origin: left center;
+    }
+    .seg:hover, .seg:focus-visible { filter: brightness(1.12); }
+    .seg[data-phase="infra"] { --c: var(--spruce-3); }
+    .seg[data-phase="arch"]  { --c: var(--spruce-2); }
+    .seg[data-phase="agile"] { --c: var(--spruce); }
+    .seg.alt { background: color-mix(in srgb, var(--c) 78%, var(--paper)); }
+
+    .years {
+      display: flex; justify-content: space-between;
+      font-size: 0.8rem; color: var(--ink-soft);
+      font-variant-numeric: tabular-nums;
+      margin-top: 0.4rem;
+    }
+
+    .caption {
+      min-height: 1.6em;
+      margin: 0.85rem 0 0;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+    .caption b { color: var(--ink); font-weight: 600; }
+
+    /* one orchestrated load moment: the bar draws itself left to right */
+    @media (prefers-reduced-motion: no-preference) {
+      .js .seg { animation: grow 700ms cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * 70ms); }
+      @keyframes grow { from { transform: scaleX(0); opacity: 0; } to { transform: scaleX(1); opacity: 1; } }
+    }
+
+    /* ---------- Sections ---------- */
+    main section { padding: 2.75rem 0; border-top: 1px solid var(--rule); }
+    main { padding-bottom: 3rem; }
+
+    .sec {
+      display: grid;
+      grid-template-columns: var(--gutter) minmax(0, var(--measure));
+      column-gap: 2rem;
+    }
+    .sec > h2 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 1.3;
+      margin: 0.1rem 0 1rem;
+      color: var(--spruce);
+    }
+    .sec > .body { min-width: 0; }
+
+    .summary p { margin: 0 0 1rem; font-size: 1.15rem; line-height: 1.6; }
+    .summary p:last-child { margin-bottom: 0; }
+
+    .facts {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+      gap: 1rem 2rem; margin: 1.75rem 0 0; padding: 0;
+    }
+    .facts div { border-left: 3px solid var(--spruce-2); padding-left: 0.85rem; }
+    .facts dt { font-weight: 600; font-size: 0.95rem; }
+    .facts dd { margin: 0.1rem 0 0; color: var(--ink-soft); font-size: 0.92rem; line-height: 1.45; }
+
+    /* ---------- Experience ---------- */
+    .employer + .employer { margin-top: 3rem; }
+
+    .employer > h3 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1.35rem;
+      line-height: 1.25;
+      margin: 0 0 0.2rem;
+    }
+    .employer > .tenure { margin: 0 0 1.5rem; color: var(--ink-soft); font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+
+    .job {
+      position: relative;
+      padding: 0 0 1.75rem 1.4rem;
+      border-left: 2px solid var(--rule);
+      scroll-margin-top: 1.5rem;
+    }
+    .job:last-child { padding-bottom: 0.25rem; }
+    .job::before {
+      content: ""; position: absolute; left: -7px; top: 0.45rem;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--paper); border: 2px solid var(--spruce-2);
+    }
+    .job.current::before { background: var(--spruce); border-color: var(--spruce); }
+    .job:target::before { background: var(--focus); border-color: var(--focus); }
+
+    .job h4 { font-size: 1.08rem; font-weight: 600; margin: 0; line-height: 1.35; }
+    .job .when { display: block; font-size: 0.9rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; margin: 0.1rem 0 0.6rem; }
+    .job .team { font-weight: 400; color: var(--ink-soft); }
+
+    .job ul { margin: 0; padding-left: 1.1rem; }
+    .job li { margin: 0 0 0.45rem; }
+    .job li::marker { color: var(--spruce-2); }
+    .job p { margin: 0; }
+
+    .highlight {
+      margin: 0.85rem 0 0;
+      padding: 0.75rem 1rem;
+      background: var(--mist);
+      border-radius: 4px;
+      font-size: 0.97rem;
+    }
+
+    /* ---------- Credentials ---------- */
+    .creds { list-style: none; margin: 0; padding: 0; }
+    .creds li {
+      display: grid; grid-template-columns: 1fr auto; gap: 0 1.5rem;
+      padding: 0.7rem 0; border-bottom: 1px solid var(--rule);
+    }
+    .creds li:first-child { padding-top: 0; }
+    .creds .yr { color: var(--ink-soft); font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+    .creds .note { grid-column: 1 / -1; color: var(--ink-soft); font-size: 0.92rem; }
+
+    .edu p { margin: 0; }
+    .edu .school { font-weight: 600; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+    .skills li {
+      font-size: 0.92rem; padding: 0.3rem 0.65rem;
+      border: 1px solid var(--rule); border-radius: 3px;
+      color: var(--ink);
+    }
+    .skill-group + .skill-group { margin-top: 1.25rem; }
+    .skill-group h3 { font-size: 0.98rem; font-weight: 600; margin: 0 0 0.55rem; }
+
+    footer { border-top: 1px solid var(--rule); padding: 2rem 0 3rem; color: var(--ink-soft); font-size: 0.9rem; }
+
+    /* ---------- Small screens ---------- */
+    @media (max-width: 760px) {
+      .sec { grid-template-columns: 1fr; }
+      .track { height: 2.5rem; gap: 2px; }
+      .phase { font-size: 0.9rem; }
+      .phase span { font-size: 0.72rem; }
+    }
+    @media (max-width: 420px) {
+      .phase { font-size: 0.8rem; padding-left: 0.4rem; }
+    }
+
+    /* ---------- Print: a clean one-column CV ---------- */
+    @media print {
+      @page { margin: 0.6in 0.65in; }
+      :root { --paper: #fff; --ink: #000; --ink-soft: #333; --spruce: #1f4d3f; --rule: #bbb; --mist: #eef2ef; }
+      body { font-size: 10pt; line-height: 1.4; }
+      .skip, .actions, .career, footer { display: none !important; }
+      .wrap { max-width: none; padding: 0; }
+      .masthead { padding: 0 0 0.8rem; }
+      .masthead h1 { font-size: 26pt; margin-bottom: 0.3rem; }
+      .role { font-size: 13pt; margin-bottom: 0.5rem; max-width: none; }
+      main section { padding: 0.9rem 0; }
+      .sec { grid-template-columns: 1fr; }
+      .sec > h2 { font-size: 13pt; margin-bottom: 0.5rem; }
+      .summary p { font-size: 10.5pt; }
+      .employer + .employer { margin-top: 1rem; }
+      .employer > h3 { font-size: 12pt; }
+      .employer > .tenure { margin-bottom: 0.5rem; }
+      .job { padding-bottom: 0.7rem; }
+      .job h4, .job .when, .employer > h3, .employer > .tenure, .sec > h2 { break-after: avoid; }
+      .job li, .highlight, .facts div, .skill-group, .creds li { break-inside: avoid; }
+      .job li { margin-bottom: 0.15rem; }
+      a { color: inherit; text-decoration: none; }
+      .highlight { background: none; padding: 0.2rem 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap masthead">
+    <h1>Jesse Hildebrand</h1>
+    <p class="role">Enterprise architect and agile coach, with twenty years of building, running, and improving federal IT systems.</p>
+    <ul class="meta">
+      <li><strong>Bridgeport, West Virginia</strong></li>
+      <li>SAFe Practice Consultant (SPC)</li>
+      <li>Red Hat Certified System Administrator</li>
+      <li>Active Top Secret clearance</li>
+    </ul>
+    <!--
+      Contact: add the links you want public here, for example
+      <li><a href="mailto:you@example.com">you@example.com</a></li>
+      <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+      inside the .meta list above, or as buttons in .actions below.
+    -->
+    <div class="actions">
+      <a class="btn" href="#experience">See experience</a>
+      <button class="btn ghost" type="button" onclick="window.print()">Save as PDF</button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="career" aria-labelledby="career-title">
+      <h2 id="career-title">Career timeline</h2>
+      <div class="phases" aria-hidden="true">
+        <div class="phase" style="flex: 98">Infrastructure<span>2005–2013</span></div>
+        <div class="phase" style="flex: 73">Architecture<span>2013–2019</span></div>
+        <div class="phase" style="flex: 87" id="phase-agile">Agile<span>2019–present</span></div>
+      </div>
+      <nav class="track" aria-label="Roles over time">
+        <a class="seg"     data-phase="infra" style="flex: 26; --i: 0" href="#job-mvnu"     data-role="IT support and networking intern" data-when="2005–2007"></a>
+        <a class="seg alt" data-phase="infra" style="flex: 27; --i: 1" href="#job-hw"       data-role="Hardware Engineer, Lockheed Martin" data-when="2007–2009"></a>
+        <a class="seg"     data-phase="infra" style="flex: 33; --i: 2" href="#job-solaris"  data-role="Solaris System Administrator, Lockheed Martin" data-when="2009–2012"></a>
+        <a class="seg alt" data-phase="infra" style="flex: 12; --i: 3" href="#job-sysadmin" data-role="Sr. System Administrator, Fusion Technology" data-when="2012–2013"></a>
+        <a class="seg"     data-phase="arch"  style="flex: 73; --i: 4" href="#job-ea"       data-role="Enterprise Architect, Fusion Technology" data-when="2013–2019"></a>
+        <a class="seg alt" data-phase="agile" style="flex: 61; --i: 5" href="#job-coach"    data-role="Agile Transformation Coach, Fusion Technology" data-when="2019–2024"></a>
+        <a class="seg"     data-phase="agile" style="flex: 26; --i: 6" href="#job-sm"       data-role="Scrum Master, Fusion Technology" data-when="2024–present" id="seg-current"></a>
+      </nav>
+      <div class="years" aria-hidden="true"><span>2005</span><span id="year-now">2026</span></div>
+      <p class="caption" id="caption" aria-live="polite"><b>Scrum Master, Fusion Technology</b>, 2024–present</p>
+    </section>
+  </div>
+
+  <main id="main" class="wrap">
+
+    <section class="sec summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Summary</h2>
+      <div class="body">
+        <p>I started out racking servers and keeping Solaris and Red Hat fleets running. I moved into enterprise architecture on FBI Criminal Justice Information Services (CJIS) programs, then spent five years coaching Agile Release Trains for a Lean-Agile Center of Excellence.</p>
+        <p>Today I'm a Scrum Master and the go-to SAFe expert on my Agile Release Train. My background in infrastructure and architecture means I understand the work my team does, which helps me guide them to improve every iteration.</p>
+        <dl class="facts">
+          <div><dt>SAFe 6 Practice Consultant</dt><dd>Certified SPC who has taught official SAFe certification courses.</dd></div>
+          <div><dt>20 years in IT</dt><dd>Federal contracting with Lockheed Martin and Fusion Technology since 2007, including CJIS programs.</dd></div>
+          <div><dt>Active Top Secret clearance</dt></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <div class="body">
+
+        <div class="employer">
+          <h3>Fusion Technology LLC</h3>
+          <p class="tenure">2012–present, four roles</p>
+
+          <article class="job current" id="job-sm">
+            <h4>Scrum Master</h4>
+            <span class="when">September 2024–present</span>
+            <ul>
+              <li>Servant leader for a large development team that builds and maintains two distinct applications.</li>
+              <li>Coaches the team and its Agile Release Train (ART) on best practices.</li>
+              <li>Uses AI tools to gather and track team metrics, pinpointing bottlenecks and areas for improvement, then leads the resulting process improvements every iteration.</li>
+              <li>Runs all team events: team sync, backlog refinement, iteration planning, iteration review, and customer demos.</li>
+              <li>Works closely with the Product Owner, respecting their responsibilities, to help the team excel.</li>
+              <li>Serves as the go-to SAFe expert for the entire ART on process and execution questions.</li>
+            </ul>
+          </article>
+
+          <article class="job" id="job-coach">
+            <h4>Agile Transformation Coach<span class="team">, Lean-Agile Center of Excellence</span></h4>
+            <span class="when">August 2019–September 2024</span>
+            <ul>
+              <li>Coached Agile Release Trains and teams on agile practices, suggested process improvements, and spotted and resolved anti-patterns.</li>
+              <li>Taught official SAFe 6.0 certification courses to internal participants, including SAFe Scrum Master, SAFe Product Owner, and SAFe for Teams.</li>
+              <li>Wrote quick-start guides for SAFe roles to help new members get up to speed on the train.</li>
+              <li>Supported the team's architecture work, including guidance, coaching, and architectural context.</li>
+            </ul>
+          </article>
+
+          <article class="job" id="job-ea">
+            <h4>Enterprise Architect<span class="team">, IT Architecture Group (ITAG) at CJIS</span></h4>
+            <span class="when">July 2013–August 2019</span>
+            <ul>
+              <li>Recommended IT architecture best practices and wrote and presented architecture guidance documents.</li>
+              <li>Worked on procuring a customer-funded public cloud environment on AWS and Azure, and provided architectural guidance for its use.</li>
+              <li>Led a performance study of IBM DataPower and IBM Cloud Private (Kubernetes), delivering a full review and architectural recommendations.</li>
+              <li>Technical liaison on <em>The Justice Cloud</em> onboarding team. Gathered customers' system requirements and guided their application architecture for CJIS cloud infrastructure. Tracked each environment from request to completion with all CJIS service providers and coordinated Enterprise Change Requests (ECRs) in IBM ClearQuest as lead technical contact.</li>
+              <li>Administered the team's Office 365 environment. Wrote the security documentation and rules of behavior that won CJIS Security approval to use Office 365 in a secure environment.</li>
+            </ul>
+            <p class="highlight">Led a video-conferencing initiative to cut customer travel costs. The National Instant Criminal Background Check System (NICS) used the solution to meet external customers who could not travel.</p>
+          </article>
+
+          <article class="job" id="job-sysadmin">
+            <h4>Sr. System Administrator<span class="team">, Law Enforcement Online Enterprise Portal (LEO-EP)</span></h4>
+            <span class="when">July 2012–July 2013</span>
+            <ul>
+              <li>Administered 67 Red Hat Enterprise Linux 5.8 servers running IBM WebSphere Portal and Application Server, Tivoli Identity Manager, and Tivoli Access Manager.</li>
+              <li>Built and deployed servers on VMware ESXi and vSphere. Maintained developer workstations and configured development VMs with WebSphere, Rational Application Developer, and Mobile Portal Toolkit.</li>
+              <li>Opened and worked change requests in IBM Rational ClearQuest.</li>
+              <li>Led the deployment of a wireless access point for mobile testing and wrote its security policy, which FBI Security approved.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="employer">
+          <h3>Lockheed Martin</h3>
+          <p class="tenure">2007–2012, two roles</p>
+
+          <article class="job" id="job-solaris">
+            <h4>Solaris System Administrator</h4>
+            <span class="when">October 2009–July 2012</span>
+            <ul>
+              <li>Administered 200+ Solaris servers across two high-availability sites, production and Continuity of Operations (COOP).</li>
+              <li>Troubleshot and replaced failed hardware on Sun servers, and administered blades, LDOMs, and Zones through the command line, ALOM, and ILOM.</li>
+              <li>Maintained IBM Tivoli Access Manager, Tivoli Identity Manager, and WebSphere products. Handled OS patching, installs, and COTS troubleshooting.</li>
+              <li>Managed a Tier 3 ticket queue. Managed user accounts in SDS 6.3 LDAP and reported application usage metrics to management.</li>
+              <li>Racked, configured, and security-hardened 36 Solaris servers for a hardware expansion. Led classroom training for 25 users and one-on-one training sessions.</li>
+            </ul>
+          </article>
+
+          <article class="job" id="job-hw">
+            <h4>Hardware Engineer</h4>
+            <span class="when">July 2007–October 2009</span>
+            <ul>
+              <li>Administered 50+ Solaris 10 and 20+ SUSE Linux (SGI) servers in a development environment, including NIS account management.</li>
+              <li>Owned hardware troubleshooting and repair on Sun and SGI servers. Helped with OS patching, upgrades, and Foundry and Cisco switch configuration.</li>
+              <li>Maintained 300+ Solaris 10 desktop PCs.</li>
+            </ul>
+            <p class="highlight">Led the rollout of 100 Sun Ray thin clients to replace aging desktops, saving $50k a year in maintenance and electricity.</p>
+          </article>
+        </div>
+
+        <div class="employer">
+          <h3>Early experience</h3>
+          <p class="tenure">2005–2007</p>
+
+          <article class="job" id="job-mvnu">
+            <h4>Student IT Support<span class="team">, Mount Vernon Nazarene University</span></h4>
+            <span class="when">May 2005–May 2007</span>
+            <p>Removed viruses and malware, fixed connectivity problems, and reported campus-wide network issues. Supervised three other student support staff.</p>
+          </article>
+
+          <article class="job" id="job-intern">
+            <h4>Networking Intern<span class="team">, Micro Industries Inc.</span></h4>
+            <span class="when">May 2006–July 2006</span>
+            <p>Configured and repaired Windows desktops and servers, deployed laptops, set up switches, and helped maintain customers' touch-screen kiosks remotely.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="creds-title">
+      <h2 id="creds-title">Certifications</h2>
+      <div class="body">
+        <ul class="creds">
+          <li><span>SAFe Practice Consultant (SPC)</span><span class="yr">2019</span></li>
+          <li><span>Red Hat Certified System Administrator</span><span class="yr">2017</span><span class="note">Red Hat Enterprise Linux 6 and 7</span></li>
+          <li><span>Solaris Administration 1</span><span class="yr">2009</span></li>
+          <li><span>SUSE Linux Administration 1 and 2</span><span class="yr">2009</span></li>
+          <li><span>CCNA Bootcamp</span><span class="yr">2008</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="body">
+        <div class="skill-group">
+          <h3>Agile and delivery</h3>
+          <ul class="skills">
+            <li>SAFe 6.0</li><li>Agile Release Trains</li><li>Scrum</li><li>Agile coaching</li><li>SAFe training delivery</li><li>Team metrics and flow</li><li>AI-assisted metrics</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Architecture and cloud</h3>
+          <ul class="skills">
+            <li>Enterprise architecture</li><li>AWS</li><li>Azure</li><li>Kubernetes (IBM Cloud Private)</li><li>IBM DataPower</li><li>CJIS cloud onboarding</li><li>Security policy</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Systems</h3>
+          <ul class="skills">
+            <li>Red Hat Enterprise Linux</li><li>Solaris</li><li>SUSE Linux</li><li>VMware ESXi and vSphere</li><li>IBM WebSphere</li><li>Tivoli Identity and Access Manager</li><li>LDAP</li><li>Office 365</li><li>IBM ClearQuest</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec edu" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <div class="body">
+        <p class="school">Mount Vernon Nazarene University, 2007</p>
+        <p>B.S. in Computer Science</p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script>
+    document.documentElement.classList.add('js');
+
+    (function () {
+      // Keep the current role's segment honest: size it to today's date.
+      var start = new Date(2024, 8, 1);          // Sept 2024
+      var now = new Date();
+      var months = Math.max(1, (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth()));
+      var current = document.getElementById('seg-current');
+      var agile = document.getElementById('phase-agile');
+      current.style.flexGrow = months;
+      agile.style.flexGrow = 61 + months;
+      document.getElementById('year-now').textContent = now.getFullYear();
+
+      // Caption follows hover and keyboard focus; every segment is labelled for screen readers.
+      var caption = document.getElementById('caption');
+      var defaultHTML = caption.innerHTML;
+      document.querySelectorAll('.seg').forEach(function (seg) {
+        var text = seg.dataset.role + ', ' + seg.dataset.when;
+        seg.setAttribute('aria-label', text);
+        var show = function () { caption.innerHTML = '<b>' + seg.dataset.role + '</b>, ' + seg.dataset.when; };
+        var reset = function () { caption.innerHTML = defaultHTML; };
+        seg.addEventListener('mouseenter', show);
+        seg.addEventListener('focus', show);
+        seg.addEventListener('mouseleave', reset);
+        seg.addEventListener('blur', reset);
+      });
+    })();
+  </script>
+</body>
+</html>
