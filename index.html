@@ -136,6 +136,8 @@
     .btn:hover { background: var(--spruce-1); border-color: var(--spruce-1); }
     .btn.ghost { background: transparent; color: var(--spruce); }
     .btn.ghost:hover { background: var(--mist); }
+    #reveal-email { display: none; }
+    .js #reveal-email { display: inline-block; }
 
     /* ---------- Career timeline (the signature element) ---------- */
     .career { margin: 1rem 0 3.5rem; }
@@ -335,15 +337,16 @@
       <li>SAFe Practice Consultant (SPC)</li>
       <li>Red Hat Certified System Administrator</li>
       <li>Active Top Secret clearance</li>
+      <li id="contact-email" hidden></li>
     </ul>
     <!--
-      Contact: add the links you want public here, for example
-      <li><a href="mailto:you@example.com">you@example.com</a></li>
-      <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
-      inside the .meta list above, or as buttons in .actions below.
+      Contact email is kept out of the HTML so spam scrapers can't harvest it.
+      The script at the bottom assembles it when "Show email" is clicked, or
+      before printing. To change the address, edit EMAIL_USER / EMAIL_DOMAIN there.
     -->
     <div class="actions">
       <a class="btn" href="#experience">See experience</a>
+      <button class="btn ghost" type="button" id="reveal-email">Show email</button>
       <button class="btn ghost" type="button" onclick="window.print()">Save as PDF</button>
     </div>
   </header>
@@ -565,6 +568,34 @@
         seg.addEventListener('mouseleave', reset);
         seg.addEventListener('blur', reset);
       });
+    })();
+
+    (function () {
+      // The address is stored in pieces and assembled only on demand, so it
+      // never appears in the page source as an address or a mailto link.
+      var EMAIL_USER = 'tcatnoc';                    // reversed local part
+      var EMAIL_DOMAIN = ['jessehildebrand', 'com']; // domain parts
+      var item = document.getElementById('contact-email');
+      var button = document.getElementById('reveal-email');
+
+      function reveal(moveFocus) {
+        if (!item.hidden) return;
+        var address = EMAIL_USER.split('').reverse().join('') +
+          String.fromCharCode(64) + EMAIL_DOMAIN.join('.');
+        var link = document.createElement('a');
+        link.href = 'mail' + 'to:' + address;
+        link.textContent = address;
+        item.appendChild(link);
+        item.hidden = false;
+        if (button) {
+          button.remove();
+          button = null;
+        }
+        if (moveFocus) link.focus();
+      }
+
+      button.addEventListener('click', function () { reveal(true); });
+      window.addEventListener('beforeprint', function () { reveal(false); });
     })();
   </script>
 </body>
